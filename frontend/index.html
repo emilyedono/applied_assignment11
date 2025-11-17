@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Sales Forecast</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        input { margin-bottom: 10px; width: 200px; padding: 5px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+
+<h1>Car Sales Forecast</h1>
+<p>Enter the sales for the last 6 months:</p>
+
+<form action="/predict" method="post">
+    <input type="number" name="lag1" placeholder="Last month" required><br>
+    <input type="number" name="lag2" placeholder="2 months ago" required><br>
+    <input type="number" name="lag3" placeholder="3 months ago" required><br>
+    <input type="number" name="lag4" placeholder="4 months ago" required><br>
+    <input type="number" name="lag5" placeholder="5 months ago" required><br>
+    <input type="number" name="lag6" placeholder="6 months ago" required><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+</body>
+</html>
